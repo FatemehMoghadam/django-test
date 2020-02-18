@@ -1,0 +1,10 @@
+{% extends 'thecut/base.html' %}
+
+{% block content %}
+
+     {% for instance in car_list %}
+          <p>{{ instance.car_model  }}</p>
+          <p>{{ instance.car_model }} - <a href='{{ instance.get_absolute_url }}'>{{ instance.car_model }}</a></p>
+     {% endfor %}
+
+{% endblock %}
